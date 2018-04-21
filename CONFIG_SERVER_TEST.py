@@ -9,18 +9,18 @@
 
 
 
-# VALID_VIDEO_PATH = '/data/mcdc_data/valid/'
-# CAMERA_PARAMETER_PATH = '/data/mcdc_data/valid/camera_parameter.json'
-# WRITE_JSON_DIR='/data/workspace/darknet/mcdc/'
-# TEST_VIDEO_DIR='/data/mcdc_data/valid/'
-# DARKNET_DIR= '/data/workspace/fbdet/'
-
-
-VALID_VIDEO_PATH = '/data/mcdc_data/test/'
-CAMERA_PARAMETER_PATH = '/data/mcdc_data/test/camera_parameter.json'
-WRITE_JSON_DIR='/data/test_pre/'
-TEST_VIDEO_DIR='/data/mcdc_data/test/'
+VALID_VIDEO_PATH = '/data/mcdc_data/valid/'
+CAMERA_PARAMETER_PATH = '/data/mcdc_data/valid/camera_parameter.json'
+WRITE_JSON_DIR='/data/workspace/darknet/mcdc/'
+TEST_VIDEO_DIR='/data/mcdc_data/valid/'
 DARKNET_DIR= '/data/workspace/fbdet/'
+
+
+# VALID_VIDEO_PATH = '/data/mcdc_data/test/'
+# CAMERA_PARAMETER_PATH = '/data/mcdc_data/test/camera_parameter.json'
+# WRITE_JSON_DIR='/data/test_pre/'
+# TEST_VIDEO_DIR='/data/mcdc_data/test/'
+# DARKNET_DIR= '/data/workspace/fbdet/'
 
 
 #  test

@@ -2,6 +2,14 @@
 import json
 import numpy as np
 
+
+avg_diff=[0.0, 0.0, 0.0, 0.0, 0.0,
+ 0.0, 1.3416835535714284, 1.184671114285714, 1.142199166666666, 0.9510829570135757,
+ 0.9700174060009891, 0.7326480352424395, 0.33833041112848355, 0.34697109511554064, -0.4077794617940201,
+ -0.1361138461538459, -0.48021973652694605, -0.6530303176470591, -1.7660533561643832, -1.5668582773109248,
+ -1.7702286470588238, 0.0, 0.0, 0.0, 0.0,
+ 0.0, 0.0, 0.0, 0.0, 0.0]
+# 应该拟合出一条光滑的曲线  y=-0.22x+2.62
 def smoothDistance(list):
     #参数
     max_realtive_v = 20
@@ -12,7 +20,9 @@ def smoothDistance(list):
     max_threshold_x = 0.45
     min_threshold_x = -max_threshold_x
 
-    smooth_x_list = [x-1 for x in list]
+
+    #smooth_x_list = [ (1.22*x-2.26) for x in list]
+    smooth_x_list = [ (1.22*x-2.26) for x in list]
 
     for i in range(1, len(list)):
         x0 = smooth_x_list[i - 1]

@@ -299,7 +299,7 @@ def handleVideo(video_path, time_txt_name, output_result_json_path, camera_param
                 box_x, box_y, box_w, box_h = pre_box_x, pre_box_y, pre_box_w, pre_box_h
                 #print('the '+str(i)+' pic------------------only_box is null', x1, y1)
 
-            drawBoxOnImg(img, box_x, box_y, box_w, box_h, x1, y1, frameId)
+            #drawBoxOnImg(img, box_x, box_y, box_w, box_h, x1, y1, frameId)
 
             # 然后计算速度+距离
             # distance_x代表相距前车距离
@@ -345,10 +345,10 @@ def handleVideo(video_path, time_txt_name, output_result_json_path, camera_param
         json.dump(final_dict, json_file, ensure_ascii = False)
 
     # row data to file:
-    # with open('/data/test_pre/myRawJson_test_'+str(frameid)+'.json','w+') as row_json_file:
-    #     json.dump(tmp_dict, row_json_file, ensure_ascii = False)
+    with open(output_result_json_path[0:-5]+'_raw.json','w+') as row_json_file:
+        json.dump(tmp_dict, row_json_file, ensure_ascii = False)
 
-    #print('=========pipeline finished,write json finished============>')
+    print('======pipeline finished,write json:'+output_result_json_path+' finished======>')
     video.release()
     # cv2.destroyAllWindows()
 
